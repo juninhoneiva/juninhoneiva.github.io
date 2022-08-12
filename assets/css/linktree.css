@@ -22,44 +22,7 @@ a {
   height: 100%;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-}
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background: #17434e;
 }
 
 #bg {
@@ -94,6 +57,10 @@ a {
   transition: all ease-in 0.5s;
 }
 
+#item svg {
+  z-index: 1;
+}
+
 #item a {
   z-index: 1;
   padding: 1rem 5rem 1rem 0.3rem;
@@ -107,9 +74,14 @@ a {
   height: 100%;
   left: 0;
   top: 0;
-  background: #91b9bc;
-  transition: ease-out 0.3s;
+  background: #17434e;
+  transition: all ease-out 0.3s;
   z-index: -1;
+}
+
+#item:hover path {
+  fill: #f6f9fa;
+  transition: all ease-out 0.3s;
 }
 
 #item:hover::before {
@@ -124,22 +96,12 @@ a {
   border-radius: 0 0 8px 8px;
 }
 
-#item img {
-  width: 10%;
-  z-index: 1;
-}
-
 #sep {
   width: 70%;
   height: 2px;
   border-radius: 50%;
   background: rgb(42, 112, 130);
-  background: linear-gradient(
-    45deg,
-    rgba(159, 232, 250, 1) 0%,
-    rgba(42, 112, 130, 1) 50%,
-    rgba(159, 232, 250, 1) 100%
-  );
+  background: linear-gradient(45deg, #548a92 0%, #17434e 50%, #548a92 100%);
 }
 
 #icons a,
